@@ -1,0 +1,99 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>EmptyResearch's Site</title>
+<script>
+$(document).ready(function(){
+    $(document).keyup(function(){
+    var answer1="int number1, number2;";
+    if (($("input.input1").val() === answer1)){   
+        $("p.correct1").show(300);
+    }
+    else {
+        $("p.correct1").hide(300);
+    }
+    if (($("input.input2-1").val()==='cout << "Enter number one: ";')&&($("input.input2-2").val()==='cin >> number1;')&&($("input.input2-3").val()==='cout << "Enter number two: ;')&&($("input.input2-4").val()==='cin >> number2;')){
+        $("p.correct2").show(300);
+    }
+    else {
+        $("p.correct2").hide(300);
+    }
+    if($("input.input3").val()==='cout << "The product of these two numbers is " + number1 * number2;'){
+        $("p.correct3").show(300);
+    }
+    else {
+        $("p.correct3").hide(300);
+    }
+    });
+});
+</script>
+<style>
+
+</style>
+</head>
+<body>
+<div class="Menu">
+  <style>
+  body {
+    font-family: tahoma;
+    background: #AFDDD2;
+    color: #EA8466;
+  }
+  div.Button {
+    background: #DAD5DD; border: 3px solid #EA8466; border-radius: 8px; width:100px; height: 40px; position: relative; 
+  }  
+  p.Button-Text {
+    position: relative;top:-5px;text-align: center; color: #EA8466;text-decoration:none;
+  }
+  div.Menu {
+    text-align: center;
+  }
+  a {
+   text-decoration: none;
+  } 
+  </style>
+  <strong><h1 style="color:#EA8466;text-align:center;"> EmptyResearch - Welcome to my site!</h1></strong>
+  <p style="color:#EA8466;text-align:center;font-size:12px;">(Note: This site was built for 1366 * 768 screens. If this site doesn't display properly, try setting your resolution to anything 16:9. My CSS skills are quite limited, so I'm still trying to find a way to fix this.)</p>
+  <a class="Menu" href="http://emptyresearch.github.io/about">
+  <div class="Button" style="top:10px;left:470px;"><p class="Button-Text">About</p></div>
+  </a>
+  <a class="Menu" href="http://emptyresearch.github.io/games">
+  <div class="Button" style="top:-36px;left:610px;"><p class="Button-Text">Games</p></div>
+  </a>
+  <a class="Menu" href="http://emptyresearch.github.io/tutorials">
+  <div class="Button" style="top:-82px;left:750px;"><p style="font-size:12px;"class="Button-Text">Tutorials (Coming Soon!)</p></div>  
+  </a>
+</div>  
+<h1 style="color:#EA8466;border-style: none none solid none;border-color: #EA8466;">Chapter 1 Quiz</h1>
+<strong> <p> Challenge: </strong></p><p style="color:#EA8466">
+&nbsp;&nbsp;&nbsp;&nbsp;Write a program that will get two numbers from the user, and output the product (multiplication) of those two numbers.
+<br><br>
+<strong> <p> Part 1: </strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;What code will initialize two variables (without setting them to anything) called "number1" and "number2" on the same line? </p>
+<br>
+<input type="text" value="Enter your code here." class="input1">
+<div class="answer1"><p class="correct1" style="display:none">Correct! Nice Job!</p></div>
+<br>
+<strong> <p> Part 2: </strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;What code will output "Enter number one: ", then store user input in number1; and then output "Enter number two: ", and store user input in number2? (Code on four different lines)</p>
+<br>
+<input type="text" value="Enter line one here." class="input2-1">
+<input type="text" value="Enter line two here." class="input2-2">
+<input type="text" value="Enter line three here." class="input2-3">
+<input type="text" value="Enter line four here." class="input2-4">
+<div class="answer2"><p class="correct2" style="display:none">Correct! Nice Job!</p></div>
+<br>
+<strong> <p> Part 3: </strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;What code will output the product of the two numbers (number1 and number2) in the form "The product of these two numbers is [product]"?</p>
+<br>
+<input type="text" value="Enter your code here." class="input3">
+<div class="answer3"><p class="correct3" style="display:none">Correct! Nice Job!</p></div>
+<br>
+<strong> <p> Test it out! </p> </strong>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;After these practice questions, try out your code at <a href=="http://cppshell.com">C++ Shell </a>to see the result. Did you get what you expected? If so, <strong> you are ready to continue to Chapter 2! </strong></p>
+<a style="color:#EA8466" href="http://emptyresearch.github.io/tutorials-cpp">
+<div class="Button"><p style="color:#EA8466;position:relative;top:2px;font-size:12px"class="Button-Text">Return to Index</p></div></a>
+
+  
+</body>
+</html>
